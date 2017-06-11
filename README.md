@@ -33,7 +33,7 @@ Happy Cakeday!
     *BB  BBB          *DD  DDD       *AA  AA       *YYY
     *BBBBB            *DDDDD         *AA  AA       *YYY
 
-# Ok, but how to use it?
+# Ok, but how to use it then?
 
 1 - You need a Microsoft Visual Studio e.g 2015/2017
 2 - You need to download and open this project
