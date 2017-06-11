@@ -21,7 +21,7 @@ Happy Cakeday!
     *HHH   HHH*  *AA  AA*  *PP*      *PP*          *YYY*
     *HHH   HHH*  *AA  AA*  *PP*      *PP*          *YYY*
 
-                         usertname!                       
+                         Username!                       
 
     *BBBBB            *DDDDD          *AAAA    *YYY     YYY
     *BB  BBB          *DD  DDD       *AA  AA    *YYY   YYY
@@ -33,3 +33,19 @@ Happy Cakeday!
     *BB  BBB          *DD  DDD       *AA  AA       *YYY
     *BBBBB            *DDDDD         *AA  AA       *YYY
 
+# Ok, but how to use it?
+
+1 - You need a Microsoft Visual Studio e.g 2015/2017
+2 - You need to download and open this project
+3 - Insert Login, Password and Subreddit name
+
+3.1 You need to insert your account informations into code variables in Program.cs
+or
+3.2 Compile whole project and then insert your account informations via Console.Application input (e.g your keyboard)
+
+4 - Let it work and pray that you won't send requests too fast because it may crash because of it
+I have to do some kind of workaround to avoid this :P
+
+# todo
+
+Avoiding Reddit's RateLimit Error
