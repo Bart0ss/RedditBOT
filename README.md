@@ -1,5 +1,5 @@
 # RedditBOT
-Scanning reddit comments with C# + RedditSharp 
+Scanning Reddit comments with C# + RedditSharp 
 
 # What is this BOT about?
 
@@ -46,6 +46,6 @@ or
 4 - Let it work and pray that you won't send requests too fast because it may crash because of it
 I have to do some kind of workaround to avoid this :P
 
-# todo
+# TODO
 
 Avoiding Reddit's RateLimit Error
