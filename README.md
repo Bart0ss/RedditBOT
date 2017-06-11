@@ -36,7 +36,9 @@ Happy Cakeday!
 # Ok, but how to use it then?
 
 1 - You need a Microsoft Visual Studio e.g 2015/2017
+
 2 - You need to download and open this project
+
 3 - Insert Login, Password and Subreddit name
 
 3.1 You need to insert your account informations into code variables in Program.cs
@@ -51,3 +53,7 @@ I have to do some kind of workaround to avoid this :P
 # TODO
 
 Avoiding Reddit's RateLimit Error
+
+Additional functions such as replying to comments with specific words in their comments e.g
+
+"!weather berlin" would reply to him with the weather in berlin today.
