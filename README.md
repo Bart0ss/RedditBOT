@@ -40,7 +40,9 @@ Happy Cakeday!
 3 - Insert Login, Password and Subreddit name
 
 3.1 You need to insert your account informations into code variables in Program.cs
+
 or
+
 3.2 Compile whole project and then insert your account informations via Console.Application input (e.g your keyboard)
 
 4 - Let it work and pray that you won't send requests too fast because it may crash because of it
