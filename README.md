@@ -7,7 +7,7 @@ At this moment it is scanning given amount of threads of given subreddit
   e.g 50 threads from http://reddit.com/r/news
   and does stuff that you'll tell him to do
 
-# What kind of 'stuff' it can do?
+# What kind of 'stuff' can it do?
 At this moment there's only checking if comment (not post) author has birthday today (his reddit account of course)
 and if he does, then bot is replying to him with an ASCII ART from bin/Debug/cake.txt and his name inserted into it.
 
