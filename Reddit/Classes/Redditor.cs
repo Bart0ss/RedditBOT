@@ -33,20 +33,17 @@ namespace Reddit.Classes
                 return output;
             }
         }
-
         public static bool HasBirthtDayToday(string name)
         {
             int[] monthDay = GetDateOfAccountCreation(name);
             return (monthDay[0] == DateTime.Now.Month && monthDay[1] == DateTime.Now.Day && monthDay[2] != DateTime.Now.Year);
         }
-
         public static bool ImBot(string author)
         {
             author = author.ToLower();
             string bot = Program.Login.ToLower();
             return (author == bot);
         }
-
         public static bool NameIsLegal(string name)
         {
             return (name != "[deleted]" && name != "[removed]");

@@ -9,13 +9,11 @@ namespace Reddit.Classes
     class Core
     {
         public static List<string> ListOfNames = new List<string>();
-
         public static async Task CommentManagement(Comment comment)
         {
             await FinishedFunctions.ReplyOnBirthDay(comment);
             await GoingIntoChainOfComments(comment);
         }
-
         public static async Task GoingIntoChainOfComments(Comment comment)
         {
             if (comment.Comments.Count > 0)
