@@ -38,7 +38,7 @@ namespace Reddit
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message + " " + e.HResult);
+                NonApiTasks.CreateExceptionLog(e);
             }
             Console.ReadKey();
         }
