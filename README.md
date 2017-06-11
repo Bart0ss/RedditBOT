@@ -9,7 +9,7 @@ At this moment it is scanning given amount of threads of given subreddit
 
 # What kind of 'stuff' can it do?
 At this moment there's only checking if comment (not post) author has birthday today (his reddit account of course)
-and if he does, then bot is replying to him with an ASCII ART from bin/Debug/cake.txt and his name inserted into it.
+and if he does, then bot is replying to him with an ASCII ART from bin/Debug/cake.txt and inserts his name into it
 
 Happy Cakeday!
 
