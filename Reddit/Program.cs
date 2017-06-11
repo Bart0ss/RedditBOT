@@ -13,6 +13,7 @@ namespace Reddit
         public static string SubredditName = "/r/";
         public static string PathToAsciiArtFile = @"cake.txt";
         public static int PositionOfTextToInput = 472;
+        public static int AmountOfPostsToTake = 10;
         static void Main()
         {
             NonApiTasks.CreateLog("Banning Users...");
@@ -34,7 +35,7 @@ namespace Reddit
             try
             { 
                 NonApiTasks.CreateLog("Starting...");
-                MainAsync(Login, Password, 50).Wait();
+                MainAsync(Login, Password, AmountOfPostsToTake).Wait();
             }
             catch (Exception e)
             {
