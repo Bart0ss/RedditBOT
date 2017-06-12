@@ -49,7 +49,7 @@ Reddit account with 15 or more Karma points
 4 - Let it work and pray that you won't send requests too fast because it may crash because of it
 I have to do some kind of workaround to avoid this :P
 
-# TODO
+# soon™
 
 Avoiding Reddit's RateLimit Error
 
