@@ -8,34 +8,43 @@ namespace Reddit
 {
     class Program
     {
-        public static string Login = "";
-        public static string Password = "";
+        static Program()
+        {
+            NonApiTasks.CreateLog("Login: ");
+            _Login = Console.ReadLine();
+
+            NonApiTasks.CreateLog("Password: ");
+            _Password = Console.ReadLine();
+        }
+
+        public static readonly string _Login;
+        public static readonly string _Password;
         public static string SubredditName = "/r/";
-        public static string PathToAsciiArtFile = @"cake.txt";
-        public static int PositionOfTextToInput = 472;
-        public static int AmountOfPostsToTake = 10;
+        public static string PathToAsciiArtFile = @"cake.txt"; // default
+        public static int PositionOfTextToInput = 1003; // default
+        public static int AmountOfPostsToTake = 50;
+
         static void Main()
         {
+            NonApiTasks.CreateLog("Build v1.0.1.0.");
             NonApiTasks.CreateLog("Banning Users...");
             NonApiTasks.ListOfBannedUsers();
             NonApiTasks.CreateLog("Checking variables...");
-            if (string.IsNullOrEmpty(Login) || string.IsNullOrEmpty(Password) || string.IsNullOrEmpty(SubredditName) || string.IsNullOrEmpty(PathToAsciiArtFile) || PositionOfTextToInput == -1)
+            if ( string.IsNullOrEmpty(SubredditName) || string.IsNullOrEmpty(PathToAsciiArtFile) || PositionOfTextToInput < 0|| AmountOfPostsToTake < 0)
             {
-                NonApiTasks.CreateLog("Login: ");
-                Login = Console.ReadLine();
-                NonApiTasks.CreateLog("Password: ");
-                Password = Console.ReadLine();
                 NonApiTasks.CreateLog("Subreddit (just name e.g 'news', without /r/): ");
                 SubredditName = Console.ReadLine();
                 NonApiTasks.CreateLog("Paste the path to the file with an ASCII ART");
                 PathToAsciiArtFile = Console.ReadLine();
                 NonApiTasks.CreateLog("Position (int) of nth char in PathToAsciiArtFile that's gonna be replaced with e.g user name");
                 PositionOfTextToInput = Convert.ToInt32(Console.ReadLine());
+                NonApiTasks.CreateLog("Insert the amount of posts that you want to take from subreddit");
+                AmountOfPostsToTake = Convert.ToInt32(Console.ReadLine());
             }
             try
             { 
                 NonApiTasks.CreateLog("Starting...");
-                MainAsync(Login, Password, AmountOfPostsToTake).Wait();
+                MainAsync(_Login, _Password, AmountOfPostsToTake).Wait();
             }
             catch (Exception e)
             {
@@ -43,7 +52,6 @@ namespace Reddit
             }
             Console.ReadKey();
         }
-
         static async Task MainAsync(string login, string password, int amountOfThreadsToRead)
         {
             NonApiTasks.CreateLog("Grabbing user...");

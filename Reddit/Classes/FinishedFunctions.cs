@@ -1,7 +1,6 @@
 ﻿using System;
 using RedditSharp.Things;
 using System.Threading.Tasks;
-using System.Threading;
 
 namespace Reddit.Classes
 {
@@ -32,7 +31,6 @@ namespace Reddit.Classes
                     {
                         NonApiTasks.CreateLog($"I DID NOT SEND: {comment.Shortlink}" + Environment.NewLine);
                     }
-                    Thread.Sleep(1000); // need to be done better
                 });
             }
         }

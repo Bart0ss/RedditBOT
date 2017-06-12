@@ -27,8 +27,8 @@ namespace Reddit.Classes
         public static string TryToCenterTheName_With_Spaces(string name, int amount)
         {
             int length = name.Length / 2;
-            string output = new String(' ', 10 + (15-length)); // evil floating point bit level hacking
-            return output;                                     // Just trying to put enough spaces to place the name at the center of the line.
+            string output = new String(' ', 10 + (15 - length)); // evil floating point bit level hacking
+            return output;                                       // Just trying to put enough spaces to place the name at the center of the line.
         }
         public static string InsertNameInto_ASCII_Art(string authorName)
         {

@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using RedditSharp.Things;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Reddit.Classes
-
 {
     class Core
     {
         public static List<string> ListOfNames = new List<string>();
         public static async Task CommentManagement(Comment comment)
         {
+            Thread.Sleep(1000); // need to be done better
             await FinishedFunctions.ReplyOnBirthDay(comment);
             await GoingIntoChainOfComments(comment);
         }

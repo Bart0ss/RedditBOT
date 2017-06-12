@@ -27,6 +27,9 @@ namespace Reddit.Classes
             }
             catch
             {
+                // Why these weird values are here? It is just 210th month, 100th day and 333th year, thus its impossible so bot won't reply anyway
+                // he's using those kind of random values when something "unexpected" happened.
+                // Need to be done better.
                 output[0] = 210;
                 output[1] = 100;
                 output[2] = 333;
@@ -41,7 +44,7 @@ namespace Reddit.Classes
         public static bool ImBot(string author)
         {
             author = author.ToLower();
-            string bot = Program.Login.ToLower();
+            string bot = Program._Login.ToLower();
             return (author == bot);
         }
         public static bool NameIsLegal(string name)
