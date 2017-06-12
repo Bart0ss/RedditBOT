@@ -11,14 +11,14 @@ namespace Reddit
         static Program()
         {
             NonApiTasks.CreateLog("Login: ");
-            _Login = Console.ReadLine();
+            Login = Console.ReadLine();
 
             NonApiTasks.CreateLog("Password: ");
-            _Password = Console.ReadLine();
+            Password = Console.ReadLine();
         }
 
-        public static readonly string _Login;
-        public static readonly string _Password;
+        public static readonly string Login;
+        public static readonly string Password;
         public static string SubredditName = "/r/";
         public static string PathToAsciiArtFile = @"cake.txt"; // default
         public static int PositionOfTextToInput = 1003; // default
@@ -44,7 +44,7 @@ namespace Reddit
             try
             { 
                 NonApiTasks.CreateLog("Starting...");
-                MainAsync(_Login, _Password, AmountOfPostsToTake).Wait();
+                MainAsync(Login, Password, AmountOfPostsToTake).Wait();
             }
             catch (Exception e)
             {

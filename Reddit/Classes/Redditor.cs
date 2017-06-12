@@ -44,7 +44,7 @@ namespace Reddit.Classes
         public static bool ImBot(string author)
         {
             author = author.ToLower();
-            string bot = Program._Login.ToLower();
+            string bot = Program.Login.ToLower();
             return (author == bot);
         }
         public static bool NameIsLegal(string name)
