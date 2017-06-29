@@ -3,9 +3,9 @@ Scanning Reddit comments with C# + RedditSharp
 
 # What is this BOT about?
 
-At this moment it is scanning given amount of threads of given subreddit
+At this moment it's just scanning given amount of threads of given subreddit
   e.g 50 threads from http://reddit.com/r/news
-  and does stuff that you'll tell him to do
+  and does stuff that you'll tell him to do (atm it has very limited functionality0
 
 # What kind of 'stuff' can it do?
 At this moment there's only checking if comment (not post) author has birthday today (his reddit account of course)
